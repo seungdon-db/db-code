@@ -192,4 +192,9 @@ print(cpus)
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC select input_file_name() from seungdon.students;
+
+# COMMAND ----------
+
 

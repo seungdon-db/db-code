@@ -14,6 +14,11 @@ account.schema
 
 # COMMAND ----------
 
+schema = account.schema
+
+# COMMAND ----------
+
+# no 
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType,LongType,BooleanType,DoubleType
 
 
@@ -67,4 +72,7 @@ streamQuery.recentProgress
 
 # COMMAND ----------
 
-
+# MAGIC %python
+# MAGIC # stop all of our streams
+# MAGIC for s in spark.streams.active:
+# MAGIC   s.stop()
